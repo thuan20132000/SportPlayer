@@ -1,10 +1,15 @@
 
+interface ScreenI {
+    name: String,
+
+}
+
 export type TabParamList = {
-    HomeScreen: object;
-    GameScreen: object;
-    ExploreScreen: object;
-    InboxScreen: object;
-    LeaguesScreen: object;
-    PlayersScreen: object;
+    HomeScreen: ScreenI;
+    GameScreen: ScreenI;
+    ExploreScreen: ScreenI;
+    InboxScreen: ScreenI;
+    LeaguesScreen: ScreenI;
+    PlayersScreen: ScreenI;
 
 };
