@@ -18,10 +18,7 @@ import {
 } from 'react-native';
 
 import Root from './app/component/navigation/Root';
-
-
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
   return <Root />
 };
 

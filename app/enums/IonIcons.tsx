@@ -1,8 +1,8 @@
 export enum TabBarIcon {
-    Players = 'attach-outline',
-    Explore = 'attach-outline',
+    Players = 'people-outline',
+    Explore = 'search-circle-outline',
     Games = 'football-outline',
-    InBox = 'attach-outline',
-    Leagues = 'attach-outline',
+    InBox = 'chatbox-ellipses-outline',
+    Leagues = 'ribbon-outline',
 
 }

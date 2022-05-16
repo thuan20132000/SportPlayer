@@ -10,6 +10,7 @@ import { InboxScreen } from '../inbox';
 import { LeaguesScreen } from '../leagues';
 import { PlayerScreen } from '../players';
 import { ScreenNameEnums, TabBarIcon } from '../../enums';
+import { COLORS } from '../../themes';
 
 
 
@@ -26,7 +27,13 @@ const TabNavigator = () => {
                             iconName = TabBarIcon.Games
                             break;
                         case 'ExploreScreen':
-                            iconName = TabBarIcon.Leagues
+                            iconName = TabBarIcon.Explore
+                            break;
+                        case 'PlayersScreen':
+                            iconName = TabBarIcon.Players
+                            break;
+                        case 'InboxScreen':
+                            iconName = TabBarIcon.InBox
                             break;
                         default:
                             iconName = TabBarIcon.Leagues
@@ -36,7 +43,7 @@ const TabNavigator = () => {
                     // You can return any component that you like here!
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
-                tabBarActiveTintColor: 'tomato',
+                tabBarActiveTintColor: COLORS.primary,
                 tabBarInactiveTintColor: 'gray',
             })}
         >

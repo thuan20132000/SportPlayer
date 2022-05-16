@@ -4,6 +4,9 @@
  *
  * @format
  */
+// get defaults assetExts array
+// get defaults assetExts array
+const defaultAssetExts = require('metro-config/src/defaults/defaults').assetExts;
 
 module.exports = {
   transformer: {
@@ -13,5 +16,8 @@ module.exports = {
         inlineRequires: true,
       },
     }),
+  },
+  resolver: {
+    assetExts: [...defaultAssetExts, 'ptl'],
   },
 };
