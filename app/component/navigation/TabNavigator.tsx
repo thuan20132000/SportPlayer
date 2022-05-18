@@ -45,6 +45,7 @@ const TabNavigator = () => {
                 },
                 tabBarActiveTintColor: COLORS.primary,
                 tabBarInactiveTintColor: 'gray',
+                headerShown: false
             })}
         >
             <Tab.Screen
@@ -54,13 +55,13 @@ const TabNavigator = () => {
                     title: ScreenNameEnums.Games
                 }}
             />
-            <Tab.Screen
+            {/* <Tab.Screen
                 name='PlayersScreen'
                 component={PlayerScreen}
                 options={{
                     title: ScreenNameEnums.Players
                 }}
-            />
+            /> */}
             <Tab.Screen
                 name='ExploreScreen'
                 component={ExploreScreen}
