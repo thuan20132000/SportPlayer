@@ -8,6 +8,7 @@ export const baseIcons = {
     cellular: 'cellular-outline',
     location: 'location-outline',
     trophy: 'trophy-outline',
-
-
+    star: 'star-outline',
+    happy: 'happy-outline',
+    people: 'people-outline'
 }
