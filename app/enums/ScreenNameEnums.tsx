@@ -4,5 +4,6 @@ export enum ScreenNameEnums {
     Games = 'Games',
     InBox = 'InBox',
     Leagues = 'Leagues',
+    Profile = 'Profile',
 
 }

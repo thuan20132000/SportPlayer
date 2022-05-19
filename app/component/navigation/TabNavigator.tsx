@@ -11,6 +11,7 @@ import { LeaguesScreen } from '../leagues';
 import { PlayerScreen } from '../players';
 import { ScreenNameEnums, TabBarIcon } from '../../enums';
 import { COLORS } from '../../themes';
+import { ProfileScreen } from '../profile';
 
 
 
@@ -34,6 +35,9 @@ const TabNavigator = () => {
                             break;
                         case 'InboxScreen':
                             iconName = TabBarIcon.InBox
+                            break;
+                        case 'ProfileScreen':
+                            iconName = TabBarIcon.Profile
                             break;
                         default:
                             iconName = TabBarIcon.Leagues
@@ -62,13 +66,13 @@ const TabNavigator = () => {
                     title: ScreenNameEnums.Players
                 }}
             /> */}
-            <Tab.Screen
+            {/* <Tab.Screen
                 name='ExploreScreen'
                 component={ExploreScreen}
                 options={{
                     title: ScreenNameEnums.Explore
                 }}
-            />
+            /> */}
             <Tab.Screen
                 name='InboxScreen'
                 component={InboxScreen}
@@ -77,10 +81,10 @@ const TabNavigator = () => {
                 }}
             />
             <Tab.Screen
-                name='LeaguesScreen'
-                component={LeaguesScreen}
+                name='ProfileScreen'
+                component={ProfileScreen}
                 options={{
-                    title: ScreenNameEnums.Leagues
+                    title: ScreenNameEnums.Profile
                 }}
             />
         </Tab.Navigator>

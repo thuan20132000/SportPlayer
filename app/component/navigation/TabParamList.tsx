@@ -11,5 +11,6 @@ export type TabParamList = {
     InboxScreen: ScreenI;
     LeaguesScreen: ScreenI;
     PlayersScreen: ScreenI;
+    ProfileScreen: ScreenI
 
 };
