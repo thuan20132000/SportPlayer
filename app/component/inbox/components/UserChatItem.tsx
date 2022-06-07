@@ -1,18 +1,29 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native'
+import React, { FunctionComponent } from 'react'
 import FastImage from 'react-native-fast-image'
+import AvatarCircle from '../../common/avatar/AvatarCircle'
+import { _refRootNavigation } from '../../navigation/Root'
 
-const UserChatItem = () => {
+type Props = {
+    onPress?(): void,
+    avatarUrl?: string,
+    title?: string,
+    message?: string,
+    time?: Date
+}
+
+const UserChatItem: FunctionComponent<Props> = (props) => {
+
+
+    const onShowInboxMessage = () => {
+        _refRootNavigation.navigate('InboxMessageScreen', { id: 1 })
+    }
+
     return (
-        <View style={styles.container}>
-            <FastImage
-                style={{ width: 60, height: 60, borderRadius: 50 }}
-                source={{
-                    uri: 'https://unsplash.it/400/400?image=1',
-
-                }}
-                resizeMode={FastImage.resizeMode.contain}
-            />
+        <TouchableOpacity style={styles.container}
+            onPress={onShowInboxMessage}
+        >
+            <AvatarCircle imageUrl='https://unsplash.it/400/400?image=1' />
             <View style={{ flex: 1, justifyContent: 'space-around', paddingHorizontal: 12 }}>
                 <Text style={styles.matchTitleText}>Thuan's badminton match</Text>
                 <View style={styles.messageView}>
@@ -20,7 +31,7 @@ const UserChatItem = () => {
                     <Text style={styles.messageTimeText}>22:01</Text>
                 </View>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 

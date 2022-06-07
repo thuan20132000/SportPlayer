@@ -59,20 +59,6 @@ const TabNavigator = () => {
                     title: ScreenNameEnums.Games
                 }}
             />
-            {/* <Tab.Screen
-                name='PlayersScreen'
-                component={PlayerScreen}
-                options={{
-                    title: ScreenNameEnums.Players
-                }}
-            /> */}
-            {/* <Tab.Screen
-                name='ExploreScreen'
-                component={ExploreScreen}
-                options={{
-                    title: ScreenNameEnums.Explore
-                }}
-            /> */}
             <Tab.Screen
                 name='InboxScreen'
                 component={InboxScreen}

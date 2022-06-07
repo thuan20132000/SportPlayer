@@ -11,7 +11,6 @@ const InboxScreen = () => {
         <SafeAreaView style={{ backgroundColor: COLORS.background }} >
             <CommonHeader title='Inbox' />
             <FlatList
-
                 renderItem={() => <UserChatItem />}
                 data={Array(12).fill({})}
                 contentContainerStyle={{

@@ -1,3 +1,4 @@
 import InboxScreen from "./InboxScreen";
+import InboxMessageScreen from "./InboxMessageScreen";
 
-export { InboxScreen }
+export { InboxScreen, InboxMessageScreen }
