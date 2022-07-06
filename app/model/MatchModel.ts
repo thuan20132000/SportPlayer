@@ -1,4 +1,6 @@
-class MatchModel {
+import { UserModel } from "./UserModel"
+
+export class MatchModel {
     id: string
     startTime: Date
     endTime: Date

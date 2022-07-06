@@ -10,5 +10,10 @@ export const baseIcons = {
     trophy: 'trophy-outline',
     star: 'star-outline',
     happy: 'happy-outline',
-    people: 'people-outline'
+    people: 'people-outline',
+    forward: 'arrow-forward-outline',
+    ball: 'football-outline',
+    calendar: 'calendar-outline',
+    time: 'time-outline',
+    settings: 'settings-outline'
 }

@@ -1,5 +1,6 @@
 
 export type RootStackParamList = {
     GameScreen: object;
-    InboxMessageScreen: object
+    InboxMessageScreen: object,
+    CreateMatchScreen: object
 };

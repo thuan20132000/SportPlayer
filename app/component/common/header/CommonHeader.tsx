@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, { FunctionComponent } from 'react'
 import { COLORS, ICONS } from '../../../themes'
 import ButtonIcon from '../button/ButtonIcon'
+import { _refRootNavigation } from '../../navigation/Root';
 
 export type Props = {
     title: string;
@@ -9,7 +10,9 @@ export type Props = {
 };
 const CommonHeader: FunctionComponent<Props> = ({ title = 'Title', children }) => {
 
-    const _showAddScreen = () => { }
+    const _showAddScreen = () => {
+        _refRootNavigation.navigate('CreateMatchScreen', {})
+    }
 
     return (
         <View style={styles.container}>

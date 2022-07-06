@@ -5,6 +5,7 @@ import TabNavigator from './TabNavigator';
 import { RootStackParamList } from './StackParamList';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { InboxMessageScreen } from '../inbox';
+import { CreateMatchScreen } from '../../component/matchs';
 
 
 
@@ -27,6 +28,13 @@ export default function Root() {
                     <Stack.Screen
                         name={"InboxMessageScreen"}
                         component={InboxMessageScreen}
+                        options={{
+                            // headerShown: false
+                        }}
+                    />
+                    <Stack.Screen
+                        name={"CreateMatchScreen"}
+                        component={CreateMatchScreen}
                         options={{
                             // headerShown: false
                         }}

@@ -12,7 +12,6 @@ import MyGamePage from './components/MyGamePage'
 const GameScreen = () => {
     const [selectedActionBar, setSelectedActionBar] = useState(0)
     const _onActionBarPress = (action: number) => {
-        console.log('aaa: ', action);
         setSelectedActionBar(action)
     }
 
